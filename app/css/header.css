@@ -52,8 +52,3 @@ header .banner {
   top: 0;
   z-index: 0;
 }
-@media (min-width: 1320px) {
-  header .header-content {
-    padding-top: 50px;
-  }
-}
