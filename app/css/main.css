@@ -208,7 +208,7 @@ header .banner {
   position: relative;
 }
 .destinos .destinos-list .toModal:after {
-  content: "Lviv";
+  content: "";
   position: absolute;
   bottom: -70px;
   left: 0;

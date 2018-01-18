@@ -62,21 +62,22 @@ let ivanoDescription = `Esta ciudad es la puerta de entrada a los famosos Cárpa
 Es una ciudad muy conocida ya que alberga muchos estudiantes que desean seguir carreras de ingeniería en petróleos y gas.`;
 modalLviv.onclick = function(){
     modal.style.display = 'block';
-    modalImg.style.backgroundImage = "url('https://github.com/Maurikzio/use/blob/gh-pages/app/images/destiny/lviv.jpg')";  
+    
+    modalImg.style.background = "url('../images/lviv.jpg')";  
     cityDescription.innerText = `${lvivDescription}`;
     uniList.innerText = `UNIVERSITIES OF LVIV`;
     showUniversities(lvivUniversities, "universities-list");
 }
 modalKiev.onclick = function(){
     modal.style.display = 'block';
-    modalImg.style.backgroundImage = "url('../images/kiev.jpg')";  
+    modalImg.style.background = "url('../images/kiev.jpg')";  
     cityDescription.innerText = `${kievDescription}`;
     uniList.innerText = `UNIVERSITIES OF KIEV`;
     showUniversities(kievUniversities, "universities-list");    
 }
 modalIvano.onclick = function(){
     modal.style.display = 'block';
-    modalImg.style.backgroundImage = "url('../images/ivano2.jpg')";   
+    modalImg.style.background = "url('../images/ivano2.jpg')";   
     cityDescription.innerText = `${ivanoDescription}`;
     uniList.innerText = `UNIVERSITIES OF IVANO FRANKIVSK`; 
     showUniversities(ivanoUniversities, "universities-list");   
