@@ -1,0 +1,136 @@
+.destinos{
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background: rgb(19, 24, 26);
+    hr{
+        background-color: #E65634;
+        width: 300px;
+        height: 2px;
+    }
+    h2{
+        // font-family: 'SixCaps'; 
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 50px;
+        color: white;
+        // background: pink;
+        // margin-bottom: 50px;
+    }
+    .destinos-list{
+        list-style: none;
+        // padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: red;
+        height: 200px;
+        margin-top: 50px;
+        .toModal{
+            color: white;
+            font-size: 30px;
+            margin-top: 100px;
+            cursor: pointer;
+            // border: 1px solid gold;
+            border-radius: 24px;
+            text-align: center;
+            // width: 200px;
+            flex-grow: 1;
+            height: 300px;
+            // padding-right: 60px;
+            // padding-left: 60px;
+            // padding-top: 80px;
+            // padding-bottom: 80px;
+            text-transform: uppercase;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            &:after{
+                content: "Lviv";
+                // background: red;
+                position: absolute;
+                bottom: -70px;
+                left: 0;
+            }
+        }
+        #toModalLviv{
+            background: url("../images/destin1.jpg") center;
+            background-size: cover;
+            position: relative;
+            &:after{
+                content: "Lviv";
+                width: 100%;                
+            }
+        }
+        #toModalKiev{
+            background: url("../images/destin3.jpg") center;
+            background-size: cover;
+            &:after{
+                content: "Kiev";
+                width: 100%;                
+            }
+        }
+        #toModalIvano{
+            background: url("../images/destin4.jpg") center;
+            background-size: cover;
+            &:after{
+                content: "Ivano Frankivsk";
+                width: 100%;
+            }
+        }
+    }
+    #myModal{
+        display: none;
+        background: rgb(22, 39, 43);
+        color: white;
+        margin: auto;
+        margin-top: -150px;
+        .the-modal-img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .the-modal-content{
+            transition: 1s all ease-in-out;         
+            .close-Modal{
+                // background: red;
+                display: block;
+                text-align: right;
+                cursor: pointer;
+                font-size: 50px;
+                line-height: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                transition: 1s all ease-in-out; 
+                
+            }
+            #the-text{
+                #city-description{
+                    // background: orange;
+                    font-size: 20px;
+                }
+                #universities-list{
+                    // background: aqua;
+                    text-align: center;
+                    font-weight: 700;
+                    // display: flex;
+                    // padding-left: 0;
+                    .newLi{
+                        font-weight: 400;
+                        text-align: left;
+                        padding-top: 10px;
+                        padding-bottom: 5px;
+                        // display: flex;
+                    }
+                    a{
+                        color: white;
+                        background: grey;
+                        padding: 5px;
+                        margin-left: 20px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

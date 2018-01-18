@@ -1,0 +1,57 @@
+.header-g {
+  background: red;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  margin-bottom: 0px;
+}
+.header-g nav {
+  height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.header-g nav a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 170px;
+}
+.header-g nav .theLogo {
+  background: none;
+  text-align: center;
+}
+.header-g nav .theLogo img {
+  width: 100px;
+}
+.header-g .header-content {
+  padding-top: 100px;
+}
+.header-g .header-content img {
+  width: 35%;
+}
+.header-g .banner {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+@media (min-width: 1320px) {
+  header .header-content {
+    padding-top: 50px;
+  }
+}
